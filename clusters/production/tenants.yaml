@@ -9,7 +9,7 @@ spec:
   interval: 5m
   sourceRef:
     kind: GitRepository
-    name: platform-team
+    name: openshift-platform-team
   path: ./tenants/production
   prune: true
   validation: client
