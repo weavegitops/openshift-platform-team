@@ -37,7 +37,7 @@ spec:
   gitImplementation: libgit2
   interval: 1m
   # If you fork, please change this repo URL to match the forked one.
-  url: 'https://github.com/openshift-fluxv2-poc/platform-team' 
+  url: 'https://github.com/weavegitops/openshift-platform-team' 
   ref:
     branch: main
 ---
@@ -64,13 +64,13 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   namespace: flux-system
-  name: platform-team
+  name: openshift-platform-team
 spec:
   timeout: 20s
   gitImplementation: libgit2
   interval: 1m
   # If you fork, please change this repo URL to match the forked one.
-  url: 'https://github.com/openshift-fluxv2-poc/platform-team' 
+  url: 'https://github.com/weavegitops/openshift-platform-team' 
   ref:
     branch: main
 ---
@@ -86,6 +86,6 @@ spec:
   prune: true
   force: false
   sourceRef:
-    name: platform-team
+    name: openshift-platform-team
     kind: GitRepository
 ```
