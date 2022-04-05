@@ -31,7 +31,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   namespace: flux-system
-  name: platform-team
+  name: openshift-platform-team
 spec:
   timeout: 20s
   gitImplementation: libgit2
@@ -53,7 +53,7 @@ spec:
   prune: true
   force: false
   sourceRef:
-    name: platform-team
+    name: openshift-platform-team
     kind: GitRepository
 ```
 
